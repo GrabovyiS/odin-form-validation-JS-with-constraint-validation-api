@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form validation</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form novalidate>
+      <div class="form-control">
+        <label for="email">Email:</label>
+        <input required id="email" name="email" type="email" />
+        <p class="error-message"></p>
+      </div>
+      <div class="form-control">
+        <label for="country">County:</label>
+        <select required name="country" id="country">
+          <option selected value="rus">Russia</option>
+          <option value="fr">France</option>
+          <option value="us">United States of America</option>
+        </select>
+        <p class="error-message"></p>
+      </div>
+      <div class="form-control">
+        <label for="zip">Zip code:</label>
+        <input required id="zip" name="zip" type="text" />
+        <p class="error-message"></p>
+      </div>
+      <div class="form-control">
+        <label for="password">Password:</label>
+        <input required type="password" id="password" name="password" />
+        <p class="error-message"></p>
+      </div>
+      <div class="form-control last-form-control">
+        <label for="password-confirm">Confirm password:</label>
+        <input
+          required
+          type="password"
+          id="password-confirm"
+          name="password-confirm"
+        />
+        <p class="error-message"></p>
+      </div>
+      <p class="form-message"></p>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+  <script src="./main.js"></script>
+</html>

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 320px;
+  margin: 24px auto;
+  align-items: stretch;
+  position: relative;
+}
+
+.form-message {
+  position: absolute;
+  bottom: 44px;
+  font-size: 12px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+form button[type='submit'] {
+  height: 40px;
+  width: 100px;
+  align-self: center;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  padding: 4px;
+  border: 2px solid black;
+  outline: none;
+}
+
+input:valid,
+select:valid {
+  border-color: green;
+}
+
+input + p {
+  position: absolute;
+  font-size: 12px;
+  bottom: -18px;
+  color: darkred;
+}
+
+input:invalid {
+  border-color: darkred;
+}
+
+.message-showing {
+  margin-bottom: 16px;
+}
+
+.form-message {
+  width: 100%;
+  text-align: center;
+}
+
+.success {
+  color: darkgreen;
+}
+
+.failure {
+  color: darkred;
+}
